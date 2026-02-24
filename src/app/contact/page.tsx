@@ -57,20 +57,9 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        {/* Placeholder for actual Google Calendar Iframe */}
+                        {/* Google Calendar Iframe */}
                         <div className="w-full flex-grow bg-white/5 rounded-sm overflow-hidden relative">
-                            <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 text-muted border border-dashed border-platinum-subtle/20">
-                                <svg className="w-12 h-12 text-alchemical-gold mb-6 opacity-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                                </svg>
-                                <span className="font-mono text-sm tracking-widest block mb-2 text-white">INSERT GOOGLE WORKSPACE IFRAME HERE</span>
-                                <span className="text-xs font-light max-w-xs leading-relaxed">The physical calendar embed will utilize this exact geometric spacing, replacing this placeholder block.</span>
-                            </div>
-
-                            {/* 
-                                USER INSTRUCTION: Replace this <iframe /> with your specific Google Calendar Embed Code 
-                                <iframe src="https://calendar.google.com/calendar/..." style="border: 0" width="100%" height="100%" frameborder="0" scrolling="no"></iframe>
-                             */}
+                            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ10w_eKbgyTRFOlvmjhBw5XRXc2j7VWMvxfLFAedz0uclCP5DJb_ZtC0VPm2U0v6JFQ1z2DrfaG?gv=true" style={{ border: 0 }} width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
                         </div>
                     </div>
                 </div>
