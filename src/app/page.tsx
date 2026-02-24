@@ -87,6 +87,76 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Step 5: The Alchemical Integration (The Evolution) */}
+      <section className="w-full bg-void-public py-32 px-6">
+        <div className="max-w-4xl mx-auto opacity-0 animate-[var(--animate-slow-fade)]">
+
+          {/* Section Header */}
+          <div className="mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-alchemical-gold mb-6">
+              Beyond Resolution: The Protocol 33 Evolution
+            </h2>
+            <p className="text-muted text-xl md:text-2xl font-light tracking-wide leading-relaxed">
+              Shifting from symptom management to the Architecture of Sovereignty.
+            </p>
+          </div>
+
+          {/* The 5 Pillars of Evolution */}
+          <div className="flex flex-col gap-10">
+            {/* Block 1 */}
+            <div className="border-l border-platinum pl-8 md:pl-12 py-6 bg-void-deep/30 rounded-r-sm">
+              <h3 className="text-2xl text-white font-medium mb-3">
+                Quantum Inquiry vs. Standard Affirmations
+              </h3>
+              <p className="text-muted font-light leading-relaxed">
+                Bypassing the RAS 'Truth Conflict'. Instead of forcing affirmations, we use Engine 5 Quantum Inquiry (e.g., 'How is it true that I am already safe?') to force the mind to scan for evidence of safety, separating Signal from Noise.
+              </p>
+            </div>
+
+            {/* Block 2 */}
+            <div className="border-l border-platinum pl-8 md:pl-12 py-6 bg-void-deep/30 rounded-r-sm">
+              <h3 className="text-2xl text-white font-medium mb-3">
+                Relational Presence vs. Dry Observation
+              </h3>
+              <p className="text-muted font-light leading-relaxed">
+                Abandoning the 'Trap of the Dry Observer'. P33 utilizes a 'Wet' technique of Relational Presence, entering a Juridical Dialogue with the wounded self: 'I see you. I am with you. I have brought the Sovereign Witness.'
+              </p>
+            </div>
+
+            {/* Block 3 */}
+            <div className="border-l border-platinum pl-8 md:pl-12 py-6 bg-void-deep/30 rounded-r-sm">
+              <h3 className="text-2xl text-white font-medium mb-3">
+                Harmonizing the Inner Council
+              </h3>
+              <p className="text-muted font-light leading-relaxed">
+                Moving beyond isolated symptoms to harmonize the psyche's Round Table: The Captain (Structure/Logic), The Mother (Feeling/Flow), and the Sovereign Witness (The Antaryamin reference frequency).
+              </p>
+            </div>
+
+            {/* Block 4 */}
+            <div className="border-l border-platinum pl-8 md:pl-12 py-6 bg-void-deep/30 rounded-r-sm">
+              <h3 className="text-2xl text-white font-medium mb-3">
+                An Expanded Somatic Architecture
+              </h3>
+              <p className="text-muted font-light leading-relaxed">
+                Upgrading from the standard 8-point EFT to an 11-point system (Crown, Heart, Solar Plexus), integrating deep diaphragmatic breathing and the Lion's Roar somatic discharge.
+              </p>
+            </div>
+
+            {/* Block 5 */}
+            <div className="border-l border-platinum pl-8 md:pl-12 py-6 bg-void-deep/30 rounded-r-sm">
+              <h3 className="text-2xl text-white font-medium mb-3">
+                Embodiment Over Resolution
+              </h3>
+              <p className="text-muted font-light leading-relaxed">
+                Viewing healing as bio-energetic engineering. The goal is not just to collapse trauma, but to build 'Structural Capacity'—the biological ability of the nervous system and fascia to hold the high voltage of Divine Sovereignty.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </section>
     </div>
   );
 }
