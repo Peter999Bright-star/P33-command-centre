@@ -18,7 +18,7 @@ const columns = [
 
 export default function CommandCenter() {
     return (
-        <main className="min-h-screen p-8 lg:p-12">
+        <main className="min-h-screen p-8 lg:p-12 bg-void-deep text-primary">
             <header className="mb-12 border-b border-platinum-subtle pb-6 flex items-center justify-between">
                 <div>
                     <h1 className="text-4xl font-bold tracking-tight text-white mb-2">
@@ -40,7 +40,7 @@ export default function CommandCenter() {
                 {columns.map((col) => (
                     <div
                         key={col.id}
-                        className="border border-platinum-subtle p-6 rounded-sm bg-void/50 backdrop-blur-sm shadow-xl flex flex-col h-[70vh]"
+                        className="border border-platinum-subtle p-6 rounded-sm bg-void-deep/50 backdrop-blur-sm shadow-xl flex flex-col h-[70vh]"
                     >
                         <div className="flex items-center justify-between mb-6 pb-4 border-b border-platinum-subtle/50">
                             <h2 className="text-lg font-medium text-white tracking-wide">
@@ -55,7 +55,7 @@ export default function CommandCenter() {
                             {col.items.map((item) => (
                                 <div
                                     key={item.id}
-                                    className="p-5 border border-platinum hover:border-alchemical-gold transition-colors duration-300 cursor-pointer bg-void group"
+                                    className="p-5 border border-platinum hover:border-alchemical-gold transition-colors duration-300 cursor-pointer bg-void-deep group"
                                 >
                                     <h3 className="text-primary font-medium group-hover:text-alchemical-gold transition-colors duration-300">
                                         {item.title}

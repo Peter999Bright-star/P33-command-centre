@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   description: "The Sovereign Foundation - Phase 1",
 };
 
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -19,8 +22,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${spaceGrotesk.variable} antialiased bg-void text-primary font-sans`}>
-        {children}
+      <body className={`${spaceGrotesk.variable} antialiased bg-void-public text-primary font-sans flex flex-col min-h-screen`}>
+        <Navbar />
+        <main className="flex-grow pt-20">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

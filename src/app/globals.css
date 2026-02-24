@@ -1,16 +1,25 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0d0514; /* The Void */
-  --foreground: #f3f4f6; /* Text (Primary) */
-  --muted: #9ca3af;      /* Text (Muted) */
-  --gold: #ddb940;       /* Alchemical Gold */
-  --platinum: #e5e7eb;   /* Platinum */
-  --platinum-subtle: rgba(255, 255, 255, 0.15); /* Structure */
+  --void-deep: #0d0514;
+  /* The Void (Command Center) */
+  --void-public: #160824;
+  /* The Void (Public Pages) */
+  --foreground: #f3f4f6;
+  /* Text (Primary) */
+  --muted: #9ca3af;
+  /* Text (Muted) */
+  --gold: #ddb940;
+  /* Alchemical Gold */
+  --platinum: #e5e7eb;
+  /* Platinum */
+  --platinum-subtle: rgba(255, 255, 255, 0.15);
+  /* Structure */
 }
 
 @theme inline {
-  --color-void: var(--background);
+  --color-void-deep: var(--void-deep);
+  --color-void-public: var(--void-public);
   --color-primary: var(--foreground);
   --color-muted: var(--muted);
   --color-alchemical-gold: var(--gold);
@@ -21,6 +30,6 @@
 }
 
 body {
-  background-color: var(--background);
+  background-color: var(--void-public);
   color: var(--foreground);
 }
