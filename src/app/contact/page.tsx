@@ -47,7 +47,7 @@ export default function Contact() {
                     <div className="absolute -inset-0.5 bg-gradient-to-br from-alchemical-gold/20 to-void-deep rounded-sm blur-sm opacity-50 group-hover:opacity-100 transition duration-1000"></div>
 
                     {/* The Iframe Receptacle */}
-                    <div className="relative min-h-[950px] w-full bg-void-deep border border-platinum rounded-sm p-2 shadow-2xl flex flex-col">
+                    <div className="relative min-h-[850px] w-full bg-void-deep border border-platinum rounded-sm p-2 shadow-2xl flex flex-col">
                         <div className="flex items-center justify-between p-4 border-b border-platinum-subtle/30 mb-2">
                             <span className="text-xs text-muted font-mono tracking-widest">WORKSPACE LINK ACTIVATED //</span>
                             <div className="flex gap-2">
@@ -58,8 +58,8 @@ export default function Contact() {
                         </div>
 
                         {/* Google Calendar Iframe */}
-                        <div className="w-full h-full flex-grow bg-white rounded-sm overflow-hidden relative">
-                            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ10w_eKbgyTRFOlvmjhBw5XRXc2j7VWMvxfLFAedz0uclCP5DJb_ZtC0VPm2U0v6JFQ1z2DrfaG?gv=true" style={{ border: 0, backgroundColor: 'white' }} width="100%" height="100%" frameBorder="0"></iframe>
+                        <div className="w-full h-full flex-grow bg-slate-100 rounded-2xl shadow-xl overflow-hidden relative min-h-[800px]">
+                            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ10w_eKbgyTRFOlvmjhBw5XRXc2j7VWMvxfLFAedz0uclCP5DJb_ZtC0VPm2U0v6JFQ1z2DrfaG?gv=true" style={{ border: 0, backgroundColor: 'transparent', colorScheme: 'light' }} width="100%" height="100%" frameBorder="0"></iframe>
                         </div>
                     </div>
                 </div>
