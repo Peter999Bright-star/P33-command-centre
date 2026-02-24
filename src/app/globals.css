@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0d0514; /* The Void */
+  --foreground: #f3f4f6; /* Text (Primary) */
+  --muted: #9ca3af;      /* Text (Muted) */
+  --gold: #ddb940;       /* Alchemical Gold */
+  --platinum: #e5e7eb;   /* Platinum */
+  --platinum-subtle: rgba(255, 255, 255, 0.15); /* Structure */
+}
+
+@theme inline {
+  --color-void: var(--background);
+  --color-primary: var(--foreground);
+  --color-muted: var(--muted);
+  --color-alchemical-gold: var(--gold);
+  --color-platinum: var(--platinum);
+  --color-platinum-subtle: var(--platinum-subtle);
+
+  --font-sans: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
