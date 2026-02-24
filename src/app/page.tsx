@@ -6,14 +6,14 @@ export default function Home() {
     <div className="flex flex-col w-full">
       {/* Step 2: The Hero Section (The Invitation) */}
       <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-6">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-6 opacity-0 animate-[var(--animate-slow-fade)]">
           Enter the <br className="md:hidden" />
           <span className="text-alchemical-gold">Windless Place.</span>
         </h1>
-        <p className="text-muted text-xl md:text-2xl max-w-3xl font-light tracking-wide leading-relaxed">
+        <p className="text-muted text-xl md:text-2xl max-w-3xl font-light tracking-wide leading-relaxed opacity-0 animate-[var(--animate-slow-fade)]">
           Radical Somatic Sovereignty and Clinical Trauma Resolution for the Advanced Seeker.
         </p>
-        <button className="mt-12 px-10 py-5 bg-alchemical-gold text-void-deep font-bold tracking-widest uppercase hover:bg-white transition-colors duration-500 rounded-sm">
+        <button className="mt-12 px-10 py-5 bg-alchemical-gold text-void-deep font-bold tracking-widest uppercase hover:bg-white transition-colors duration-500 rounded-sm opacity-0 animate-[var(--animate-slow-fade-delayed)]">
           Begin the Work
         </button>
       </section>
@@ -50,7 +50,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Card 1 */}
-            <article className="border border-platinum p-10 bg-void-public hover:border-alchemical-gold transition-colors duration-500 flex flex-col group cursor-pointer">
+            <article className="border border-platinum p-10 bg-void-public hover:border-alchemical-gold transition-colors duration-500 flex flex-col group cursor-pointer opacity-0 animate-[var(--animate-slow-fade-delayed)]">
               <span className="text-alchemical-gold font-mono text-sm tracking-widest mb-4">01 //</span>
               <h3 className="text-2xl text-white font-medium mb-4 group-hover:text-alchemical-gold transition-colors duration-300">
                 Clinical EFT
@@ -62,7 +62,7 @@ export default function Home() {
             </article>
 
             {/* Card 2 */}
-            <article className="border border-platinum p-10 bg-void-public hover:border-alchemical-gold transition-colors duration-500 flex flex-col group cursor-pointer">
+            <article className="border border-platinum p-10 bg-void-public hover:border-alchemical-gold transition-colors duration-500 flex flex-col group cursor-pointer opacity-0 animate-[var(--animate-slow-fade-delayed)]">
               <span className="text-alchemical-gold font-mono text-sm tracking-widest mb-4">02 //</span>
               <h3 className="text-2xl text-white font-medium mb-4 group-hover:text-alchemical-gold transition-colors duration-300">
                 Nervous System<br /> Regulation
@@ -74,7 +74,7 @@ export default function Home() {
             </article>
 
             {/* Card 3 */}
-            <article className="border border-platinum p-10 bg-void-public hover:border-alchemical-gold transition-colors duration-500 flex flex-col group cursor-pointer">
+            <article className="border border-platinum p-10 bg-void-public hover:border-alchemical-gold transition-colors duration-500 flex flex-col group cursor-pointer opacity-0 animate-[var(--animate-slow-fade-delayed)]">
               <span className="text-alchemical-gold font-mono text-sm tracking-widest mb-4">03 //</span>
               <h3 className="text-2xl text-white font-medium mb-4 group-hover:text-alchemical-gold transition-colors duration-300">
                 Sovereign Alchemy
