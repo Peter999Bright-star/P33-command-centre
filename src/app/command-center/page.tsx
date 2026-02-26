@@ -3,32 +3,36 @@ import React from "react";
 const columns = [
     {
         id: "p1-4",
-        title: "Completed Architecture",
+        title: "Secured Architecture",
         phase: "Phases 1-4",
         status: "Secure",
         items: [
-            { id: "t1", title: "Foundation", status: "Secure" },
-            { id: "t2", title: "The Scaffold", status: "Secure" },
-            { id: "t3", title: "The Front Door", status: "Secure" },
-            { id: "t4", title: "Inner Sanctum", status: "Secure" },
+            { id: "t1", title: "Scaffold", status: "Secure" },
+            { id: "t2", title: "Front Door v1", status: "Secure" },
+            { id: "t3", title: "Inner Sanctum", status: "Secure" },
+            { id: "t4", title: "Calendar Threshold", status: "Secure" },
         ],
     },
     {
-        id: "p5",
-        title: "Active Build",
-        phase: "Phase 5",
+        id: "p5-5",
+        title: "Core DNA Injection",
+        phase: "Phase 5.5",
         status: "In Progress",
         items: [
-            { id: "t5", title: "The Threshold", status: "Contact & Booking Portal" },
+            { id: "t5-1", title: "Homepage Copy Overhaul", status: "Active Build" },
+            { id: "t5-2", title: "Implement 'The Channel' Frequency", status: "Active Build" },
+            { id: "t5-3", title: "Build 'Highway vs. Backroads' Service Grid", status: "Active Build" },
         ],
     },
     {
         id: "p6",
-        title: "Data Synthesis",
+        title: "Clinical Proof",
         phase: "Phase 6",
         status: "Pending",
         items: [
-            { id: "t6", title: "The Clinical Proof", status: "P33-AW Page Synthesis" },
+            { id: "t6-1", title: "P33-AW Dedicated Page", status: "Data Synthesis" },
+            { id: "t6-2", title: "NotebookLM Transcript Synthesis", status: "Data Synthesis" },
+            { id: "t6-3", title: "Somatic Outcome Data", status: "Data Synthesis" },
         ],
     },
     {
@@ -37,9 +41,9 @@ const columns = [
         phase: "Phase 7",
         status: "Pending",
         items: [
-            { id: "t7", title: "The Watch", status: "Integration of Living Intelligence" },
-            { id: "t8", title: "Ale'Meron", status: "Wisdom Integration" },
-            { id: "t9", title: "Physics of Love", status: "Academy Genesis" },
+            { id: "t7-1", title: "'The Watch' Academy Integration", status: "Awaiting Genesis" },
+            { id: "t7-2", title: "The Physics of Love", status: "Awaiting Genesis" },
+            { id: "t7-3", title: "Golden Geometric Structure", status: "Awaiting Genesis" },
         ],
     },
 ];
@@ -83,7 +87,7 @@ export default function CommandCenter() {
                     return (
                         <div
                             key={col.id}
-                            className={`p-8 rounded-sm bg-void-deep flex flex-col h-[75vh] transition-all duration-700 ${isActive ? 'border border-alchemical-gold shadow-[0_0_30px_rgba(221,185,64,0.05)]' : 'border border-platinum-subtle'
+                            className={`p-10 rounded-sm bg-void-deep flex flex-col h-[75vh] transition-all duration-700 ${isActive ? 'border border-alchemical-gold shadow-[0_0_30px_rgba(221,185,64,0.05)]' : 'border border-platinum-subtle'
                                 }`}
                         >
                             <div className="flex flex-col mb-10 pb-6 border-b border-platinum-subtle/30">
@@ -99,7 +103,7 @@ export default function CommandCenter() {
                                 {col.items.map((item) => (
                                     <div
                                         key={item.id}
-                                        className="p-8 border border-platinum hover:border-alchemical-gold transition-colors duration-700 cursor-default bg-void-public/50 group"
+                                        className="p-10 border border-platinum hover:border-alchemical-gold transition-colors duration-700 cursor-default bg-void-public/50 group"
                                     >
                                         <h3 className={`text-lg font-medium tracking-wide transition-colors duration-700 ${isSecure ? 'text-white' : 'text-primary group-hover:text-alchemical-gold'
                                             }`}>
