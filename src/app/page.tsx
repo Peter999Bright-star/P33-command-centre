@@ -11,11 +11,13 @@ export default function Home() {
           <span className="text-alchemical-gold"> Windless Place.</span>
         </h1>
         <p className="text-muted text-xl md:text-2xl max-w-3xl font-light tracking-wide leading-relaxed opacity-0 animate-[var(--animate-slow-fade)]">
-          The civil war between your spiritual insight and your material reality ends here. Step out of the Paralysis of Integration, clear the static, and claim Sovereign Ownership of your Design.
+          I know the thrumming hum of anxiety that comes from carrying both the spiritual and material worlds. But that exhaustion isn't you; it is just the static of an old program. Clear the channel and claim Sovereign Ownership of your Design.
         </p>
-        <button className="mt-12 px-10 py-5 bg-alchemical-gold text-void-deep font-bold tracking-widest uppercase hover:bg-white transition-colors duration-500 rounded-sm opacity-0 animate-[var(--animate-slow-fade-delayed)]">
-          OPEN THE CHANNEL
-        </button>
+        <Link href="#deployment-tracks" className="mt-12 opacity-0 animate-[var(--animate-slow-fade-delayed)]">
+          <button className="px-10 py-5 bg-alchemical-gold text-void-deep font-bold tracking-widest uppercase hover:bg-white transition-colors duration-500 rounded-sm">
+            OPEN THE CHANNEL
+          </button>
+        </Link>
       </section>
 
       {/* The Paralysis of Integration */}
@@ -26,13 +28,13 @@ export default function Home() {
           </h2>
           <div className="text-muted text-lg font-light leading-loose space-y-6">
             <p>
-              You have studied the maps. You understand the architecture of the mind. You possess deep spiritual and intellectual insight into your own behavioral loops. Yet, the body remains locked in a Karmic Knot, anchored in old defensive postures.
+              I know that tightness in the chest, the profound exhaustion of being Lost at Sea while holding up the sky through sheer willpower. You possess deep insight, yet your biological nervous system secretly prepares for war.
             </p>
             <p>
-              This is the gap between knowing the path and walking it. It is the profound exhaustion of being Lost at Sea—holding up the sky through sheer willpower and cognitive dominance, while your biological nervous system secretly prepares for war.
+              But you are not broken. You are simply caught in a Karmic Knot, an energetic imprint anchoring you in old defensive postures. It is the Echo of a jammed signal.
             </p>
             <p className="text-primary font-medium italic">
-              Insight without somatic resolution is merely highly educated suffering.
+              We acknowledge the mud, then build the bridge over it. Here are the coordinates to clear the channel.
             </p>
           </div>
         </div>
@@ -47,11 +49,13 @@ export default function Home() {
             </h2>
             <div className="w-16 h-1 bg-alchemical-gold mx-auto mt-6 mb-6" />
             <p className="text-muted text-lg max-w-3xl mx-auto font-light leading-relaxed">
-              A clinical somatic technology designed to bypass the cognitive mind and directly unbind the biological misalignments keeping you anchored in the past.
+              A somatic technology engineered to extract the bottom-up trauma. We navigate the physical depths to dissolve the Karmic Static and reimprint your biological alignment.
             </p>
-            <button className="mt-8 px-8 py-3 border border-platinum text-platinum font-bold tracking-widest uppercase hover:bg-white hover:text-void-deep transition-colors duration-500 rounded-sm">
-              ACCESS THE BLUEPRINT
-            </button>
+            <Link href="/hub" className="mt-8">
+              <button className="px-8 py-3 border border-platinum text-platinum font-bold tracking-widest uppercase hover:bg-white hover:text-void-deep transition-colors duration-500 rounded-sm">
+                ACCESS THE BLUEPRINT
+              </button>
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
@@ -95,7 +99,7 @@ export default function Home() {
       </section>
 
       {/* The Service Architecture */}
-      <section className="w-full bg-void-public py-32 px-6">
+      <section id="deployment-tracks" className="w-full bg-void-public py-32 px-6">
         <div className="max-w-7xl mx-auto flex flex-col items-center">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6">
@@ -123,7 +127,7 @@ export default function Home() {
                 <div>
                   <h4 className="text-alchemical-gold font-mono text-sm tracking-widest mb-1">ANALOGY</h4>
                   <p className="text-muted font-light leading-relaxed">
-                    Running a deep diagnostic scan to remove corrupted files.
+                    A vital intervention to extinguish the localized fire and release the somatic block.
                   </p>
                 </div>
               </div>
@@ -146,21 +150,21 @@ export default function Home() {
               <div className="space-y-6 flex-grow">
                 <div>
                   <h4 className="text-platinum font-mono text-sm tracking-widest mb-1">SERVICE</h4>
-                  <p className="text-white text-lg">Program for Awakening</p>
+                  <p className="text-white text-lg">Program for Awakening (P33-AW)</p>
                 </div>
                 <div>
                   <h4 className="text-platinum font-mono text-sm tracking-widest mb-1">MECHANISM</h4>
-                  <p className="text-muted font-light">Top-Down Sovereign Invocation</p>
+                  <p className="text-muted font-light">Top-Down Infusion</p>
                 </div>
                 <div>
                   <h4 className="text-platinum font-mono text-sm tracking-widest mb-1">ANALOGY</h4>
                   <p className="text-muted font-light leading-relaxed">
-                    Installing a new Operating System to make you biologically immune to the ambient static of your past.
+                    The bridge from healing to awakening. We clear the Grey Fog and install the structural code of Embodied Sovereignty.
                   </p>
                 </div>
               </div>
 
-              <button className="mt-12 px-8 py-4 bg-alchemical-gold text-void-deep font-bold tracking-widest uppercase hover:bg-white transition-colors duration-300 w-full">
+              <button className="mt-12 px-8 py-4 bg-[#ddb940] text-void-deep font-bold tracking-widest uppercase hover:bg-white transition-colors duration-300 w-full">
                 ENTER THE HIGHWAY
               </button>
             </article>
@@ -173,9 +177,11 @@ export default function Home() {
         <h2 className="text-4xl md:text-5xl text-white font-bold tracking-tight mb-10 opacity-0 animate-[var(--animate-slow-fade)]">
           Awaiting Your Command.
         </h2>
-        <button className="px-10 py-5 bg-white text-void-deep font-bold tracking-widest uppercase hover:bg-alchemical-gold transition-colors duration-500 rounded-sm opacity-0 animate-[var(--animate-slow-fade-delayed)]">
-          INITIATE TRANSMISSION
-        </button>
+        <Link href="/contact" className="opacity-0 animate-[var(--animate-slow-fade-delayed)]">
+          <button className="px-10 py-5 bg-white text-void-deep font-bold tracking-widest uppercase hover:bg-alchemical-gold transition-colors duration-500 rounded-sm">
+            INITIATE TRANSMISSION
+          </button>
+        </Link>
       </section>
     </div>
   );
