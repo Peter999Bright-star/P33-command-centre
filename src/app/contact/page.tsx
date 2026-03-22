@@ -58,8 +58,15 @@ export default function Contact() {
                         </div>
 
                         {/* Google Calendar Iframe */}
-                        <div className="w-full h-full flex-grow bg-slate-100 rounded-2xl shadow-xl overflow-hidden relative min-h-[800px]">
-                            <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ10w_eKbgyTRFOlvmjhBw5XRXc2j7VWMvxfLFAedz0uclCP5DJb_ZtC0VPm2U0v6JFQ1z2DrfaG?gv=true" style={{ border: 0, backgroundColor: 'transparent', colorScheme: 'light' }} width="100%" height="100%" frameBorder="0"></iframe>
+                        <div className="w-full rounded-xl border border-[#e5e7eb] bg-[#F5F4F6] p-2 md:p-4 shadow-lg" style={{ colorScheme: 'light' }}>
+                            <iframe 
+                                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ10w_eKbgyTRFOlvmjhBw5XRXc2j7VWMvxfLFAedz0uclCP5DJb_ZtC0VPm2U0v6JFQ1z2DrfaG?gv=true" 
+                                style={{ border: 0, backgroundColor: 'white' }} 
+                                width="100%" 
+                                height="600" 
+                                frameBorder="0"
+                                className="rounded-lg"
+                            ></iframe>
                         </div>
                     </div>
                 </div>
