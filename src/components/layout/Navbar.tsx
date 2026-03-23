@@ -24,6 +24,9 @@ export default function Navbar() {
 
                 {/* Navigation Links */}
                 <div className="hidden md:flex items-center gap-8 text-sm tracking-wide font-light">
+                    <Link href="/destiny-xray" className="text-primary hover:text-alchemical-gold transition-colors duration-300">
+                        Destiny X-Ray
+                    </Link>
                     <Link href="/awakening" className="text-primary hover:text-alchemical-gold transition-colors duration-300">
                         Awakening
                     </Link>
