@@ -8,9 +8,10 @@ if (!supabaseUrl || !supabaseAnonKey) {
 }
 
 // Initialize the Supabase client connection (The Metal Boundary)
+// We provide safe fallbacks so Next.js static build doesn't crash when Vercel compiles the project without env vars.
 export const supabase = createClient(
-  supabaseUrl || '',
-  supabaseAnonKey || ''
+  supabaseUrl || 'https://build-placeholder.supabase.co',
+  supabaseAnonKey || 'build-placeholder-key'
 );
 
 // Basic Database Types for the Protocol 33 CRM
