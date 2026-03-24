@@ -7,30 +7,72 @@ export default function DestinyXRay() {
       
       {/* 
         ======================================================== 
-        SECTION 1: THE VANGUARD (Top Fold) 
+        SECTION 1: THE VANGUARD (Hero Section) 
         ======================================================== 
       */}
       <section className="pt-40 pb-24 px-6 md:px-12 max-w-7xl mx-auto flex flex-col items-center text-center">
         <h1 className="text-5xl md:text-7xl font-bold tracking-tighter text-[#D4B993] mb-6">
-          The Destiny X-Ray.
+          The Destiny X-Ray
         </h1>
         <h2 className="text-xl md:text-2xl font-light text-[#F5F4F6]/80 mb-10 max-w-3xl leading-relaxed tracking-wide">
-          Stop treating the smoke. Map your Somatic Hardware and locate the Karmic Knot.
+          Stop treating the smoke. Map your somatic hardware and locate the Karmic Knot.
         </h2>
         
         <div className="w-16 h-px bg-[#F5F4F6]/30 mb-10" />
         
         <p className="max-w-4xl text-lg font-light leading-loose text-[#F5F4F6]/70">
-          Chasing symptoms is an endless loop. The Astro-Synthesis model bypasses the noise by pulling the exact structural blueprint of your incarnation. We locate where the flow is crimped at the source code level, mapping your bio-energetic hardware to reveal not just what is stuck, but exactly how it was designed to operate.
+          Traditional therapy and standard energy work rely on a flawed premise: asking you where it hurts. But when you are exhausted from holding up the sky, your conscious mind is often distracted by the drama of the week, masking the actual structural fire. A surgeon does not operate without an MRI. An acupuncturist does not place a needle without reading the pulse. The Destiny X-Ray is your structural audit. It is the personal operating manual you were never handed at birth.
         </p>
       </section>
 
       {/* 
         ======================================================== 
-        SECTION 2: THE CORE DIAGNOSTIC (The Products) 
+        SECTION 2: THE PARADIGM SHIFT 
         ======================================================== 
       */}
-      <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+      <section className="py-16 px-6 md:px-12 max-w-4xl mx-auto text-center border-t border-[#F5F4F6]/10">
+        <h2 className="text-3xl font-medium text-[#F5F4F6] mb-6">
+          You Are Not Broken. You Are Fighting Your Design.
+        </h2>
+        <p className="text-lg font-light leading-loose text-[#F5F4F6]/70">
+          The recurring cycles of friction, the heavy resistance in your business, the physical exhaustion—these are not punishments, and you are not a victim of circumstance. They are simply Karmic Knots: specific, mathematical clashes between your innate elemental blueprint and the environment you are forcing yourself to operate within. When you commission your Blueprint, the light of awareness dawns. The subconscious static rises to the surface. You finally see the terrain for what it is.
+        </p>
+      </section>
+
+      {/* 
+        ======================================================== 
+        SECTION 3: THE CLINICAL INTEGRATION 
+        ======================================================== 
+      */}
+      <section className="py-16 px-6 md:px-12 max-w-4xl mx-auto text-center border-t border-[#F5F4F6]/10">
+        <h2 className="text-3xl font-medium text-[#F5F4F6] mb-6">
+          The Foundation of Protocol 33
+        </h2>
+        <p className="text-lg font-light leading-loose text-[#F5F4F6]/70">
+          The Destiny X-Ray is the bedrock of our clinical work. Whether you are using it to validate your own internal compass or bringing it into a 1:1 Protocol 33-AW surgery, this map dictates the strategy. It ensures every choice, every boundary, and every therapeutic inquiry is perfectly aligned with your unique cosmic and biological signature. You retain the free will to build whatever reality you desire. But now, you will know exactly which wind to sail with, and which storms require a heavier anchor.
+        </p>
+      </section>
+
+      {/* 
+        ======================================================== 
+        SECTION 4: THE CTA 
+        ======================================================== 
+      */}
+      <section className="py-16 px-6 md:px-12 max-w-7xl mx-auto flex flex-col items-center text-center">
+        <h2 className="text-2xl font-bold tracking-wide text-[#D4B993] mb-4">
+          Stop fumbling in the dark. Stop guessing your coordinates.
+        </h2>
+        <p className="text-xl font-light text-[#F5F4F6] mb-6">
+          Claim your operating manual and assume command of your vessel.
+        </p>
+      </section>
+
+      {/* 
+        ======================================================== 
+        SECTION 5: THE CORE DIAGNOSTIC (The Products) 
+        ======================================================== 
+      */}
+      <section className="pb-24 px-6 md:px-12 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           
           {/* TIER 1: The Blueprint */}
@@ -44,7 +86,7 @@ export default function DestinyXRay() {
               href="/blueprint"
               className="mt-auto block text-center w-full py-4 border border-[#F5F4F6]/30 text-[#F5F4F6] hover:bg-[#F5F4F6] hover:text-[#1C1A27] transition-all duration-300 tracking-widest uppercase text-sm font-medium"
             >
-              Initiate Scan
+              COMMISSION YOUR X-RAY
             </Link>
           </div>
 
@@ -73,7 +115,7 @@ export default function DestinyXRay() {
               href="/blueprint"
               className="mt-auto block text-center w-full py-4 bg-[#D4B993] text-[#1C1A27] hover:bg-[#F5F4F6] transition-all duration-300 tracking-widest uppercase text-sm font-bold"
             >
-              Secure The Trinity
+              COMMISSION YOUR X-RAY
             </Link>
           </div>
 
@@ -82,7 +124,7 @@ export default function DestinyXRay() {
 
       {/* 
         ======================================================== 
-        SECTION 3: ADVANCED PROTOCOLS (Lower Fold) 
+        SECTION 6: ADVANCED PROTOCOLS (Lower Fold) 
         ======================================================== 
       */}
       <section className="bg-[#F5F4F6] text-[#1C1A27] py-32 px-6 md:px-12 mt-16 border-t border-[#D4B993]/50">

@@ -10,11 +10,14 @@ export default function BlueprintGateway() {
     last_name: '',
     email: '',
     phone: '',
+    great_work: '',
+    core_values: '',
+    the_crux: '',
   });
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
@@ -117,6 +120,55 @@ export default function BlueprintGateway() {
               className="w-full bg-transparent border-b border-platinum-subtle pb-2 text-white focus:outline-none focus:border-alchemical-gold transition-colors"
               placeholder="+1 (555) 000-0000"
             />
+          </div>
+
+          <div className="space-y-4 pt-4 border-t border-platinum-subtle mt-4">
+            <h3 className="text-xl font-medium text-alchemical-gold mb-6">Somatic Hardware Assessment</h3>
+            
+            <div className="space-y-2">
+              <label htmlFor="great_work" className="text-xs font-mono text-muted uppercase tracking-widest leading-loose block">
+                Your 'Great Work': What are your primary goals for the next 6-12 months?
+              </label>
+              <textarea
+                id="great_work"
+                name="great_work"
+                value={formData.great_work}
+                onChange={handleChange}
+                rows={3}
+                className="w-full bg-transparent border-b border-platinum-subtle pb-2 text-white focus:outline-none focus:border-alchemical-gold transition-colors resize-none"
+                placeholder="Expand on your vision..."
+              />
+            </div>
+
+            <div className="space-y-2">
+              <label htmlFor="core_values" className="text-xs font-mono text-muted uppercase tracking-widest leading-loose block">
+                Your 'Values': What are your 3-5 core personal or spiritual values?
+              </label>
+              <textarea
+                id="core_values"
+                name="core_values"
+                value={formData.core_values}
+                onChange={handleChange}
+                rows={3}
+                className="w-full bg-transparent border-b border-platinum-subtle pb-2 text-white focus:outline-none focus:border-alchemical-gold transition-colors resize-none"
+                placeholder="List your values..."
+              />
+            </div>
+
+            <div className="space-y-2">
+              <label htmlFor="the_crux" className="text-xs font-mono text-muted uppercase tracking-widest leading-loose block">
+                The 'Crux': What is the single biggest challenge or 'stuck point' you are facing right now?
+              </label>
+              <textarea
+                id="the_crux"
+                name="the_crux"
+                value={formData.the_crux}
+                onChange={handleChange}
+                rows={3}
+                className="w-full bg-transparent border-b border-platinum-subtle pb-2 text-white focus:outline-none focus:border-alchemical-gold transition-colors resize-none"
+                placeholder="Describe the resistance..."
+              />
+            </div>
           </div>
 
           {status === 'error' && (
