@@ -40,3 +40,18 @@ export type ClinicalLogRecord = {
   session_date: string; // DATE
   gold_standard_notes: string;
 };
+
+export type PulseBroadcastRecord = {
+  date: string; // DATE (YYYY-MM-DD)
+  weather_summary: string | null;
+  somatic_impact: string | null;
+  sovereign_command: string | null;
+  cta_link: string | null;
+  global_shadow_windows: Record<string, any> | null; // JSONB
+};
+
+export type SubscriberRecord = {
+  id: string; // UUID
+  created_at: string; // TIMESTAMP
+  email: string; // UNIQUE
+};
