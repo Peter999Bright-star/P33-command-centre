@@ -43,6 +43,11 @@ export default async function PulsePage() {
           <p className="text-xl text-white font-mono tracking-wide px-8">
             The Oracle is recalibrating. Next broadcast imminent.
           </p>
+          {error && (
+            <p className="border border-red-500/50 bg-red-500/10 text-red-400 p-4 mt-8 text-sm font-mono tracking-tight mx-8 text-left break-all">
+              SYSTEM ERROR: {error.message}
+            </p>
+          )}
         </section>
       ) : (
         <div className="max-w-4xl mx-auto mb-16">
