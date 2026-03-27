@@ -3,7 +3,7 @@ import { supabase } from "../../lib/supabase";
 import SubscribeForm from "./SubscribeForm";
 import Link from "next/link";
 
-export const revalidate = 0; // Disable static caching for dynamic daily pulse
+export const dynamic = 'force-dynamic'; // Enforce real-time server rendering
 
 export default async function PulsePage() {
   // Fetch today's broadcast
@@ -14,6 +14,10 @@ export default async function PulsePage() {
     .select("*")
     .eq("date", today)
     .single();
+
+  if (error) {
+    console.error("Supabase /pulse fetch error:", error);
+  }
 
   const cities = ["Auckland", "Sydney", "Singapore", "Mumbai", "Dubai", "London", "New York", "Los Angeles"];
 
