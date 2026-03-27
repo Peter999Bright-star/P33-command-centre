@@ -29,7 +29,7 @@ export default async function PulsePage() {
           Compass Pulse
         </h1>
         <p className="text-xl md:text-2xl text-alchemical-gold font-light tracking-wide leading-relaxed">
-          Navigational coordinates for the collective nervous system.
+          Navigational guidance for the collective nervous system.
         </p>
         <div className="w-24 h-px bg-platinum mx-auto mt-12" />
       </header>
@@ -78,9 +78,27 @@ export default async function PulsePage() {
           {/* Temporal Weather / Global Fleet */}
           {broadcast.global_shadow_windows && (
             <section className="mt-20 border border-platinum/50 bg-void-deep p-8">
-              <h3 className="text-2xl text-alchemical-gold font-medium text-center mb-8 uppercase tracking-widest">
+              <h3 className="text-2xl text-alchemical-gold font-medium text-center mb-10 uppercase tracking-widest">
                 Temporal Weather
               </h3>
+
+              <div className="max-w-4xl mx-auto mb-12 text-left border-l-2 border-platinum/50 pl-6 py-2">
+                <h4 className="text-sm font-mono tracking-widest text-[#9ca3af] mb-4 uppercase">The Shadow Windows</h4>
+                <p className="text-lg md:text-xl font-light text-[#f3f4f6]/80 leading-relaxed mb-6">
+                  The universe does not move in a straight line; it breathes in cycles of momentum and static. The times listed below are daily Vedic &quot;Shadow Windows&quot;&mdash;predictable, mathematical pockets of cosmic friction. By mapping these windows in your local timezone, you stop fighting the current and reclaim your operational energy.
+                </p>
+                <ul className="space-y-4 text-base md:text-lg font-light text-[#f3f4f6]/80 bg-void-public/50 p-6 border border-platinum/10">
+                  <li className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                    <span className="text-alchemical-gold font-bold whitespace-nowrap min-w-[240px]">RAHU (The Static Window):</span>
+                    <span className="leading-relaxed">High energetic volatility and illusion. Do not sign contracts, launch products, or engage in high-stakes communication. Do focus on internal audits, routine administration, and structural review.</span>
+                  </li>
+                  <li className="flex flex-col sm:flex-row gap-2 sm:gap-4">
+                    <span className="text-red-400 font-bold whitespace-nowrap min-w-[240px]">YAMA (The Inertia Window):</span>
+                    <span className="leading-relaxed">Heavy, dense gravitational pull. Do not try to force momentum or initiate new creative projects. Do focus on deep research, physical grounding, or scheduled rest.</span>
+                  </li>
+                </ul>
+              </div>
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {cities.map((city) => {
                   const window = broadcast.global_shadow_windows[city];
