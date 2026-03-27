@@ -5,6 +5,26 @@ import Link from "next/link";
 
 export const dynamic = 'force-dynamic'; // Enforce real-time server rendering
 
+function formatPulseDate(dateStr: string) {
+  if (!dateStr) return '';
+  const parts = dateStr.split('-');
+  if (parts.length !== 3) return dateStr;
+  
+  const dateObj = new Date(parseInt(parts[0]), parseInt(parts[1]) - 1, parseInt(parts[2]));
+  const dayName = new Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(dateObj);
+  const monthName = new Intl.DateTimeFormat('en-US', { month: 'long' }).format(dateObj);
+  const yearStr = dateObj.getFullYear();
+  const day = parseInt(parts[2]);
+  
+  const getOrdinal = (n: number) => {
+    const s = ["th", "st", "nd", "rd"];
+    const v = n % 100;
+    return n + (s[(v - 20) % 10] || s[v] || s[0]);
+  };
+  
+  return `${dayName} ${getOrdinal(day)} March, ${yearStr}`.replace('March', monthName); 
+}
+
 export default async function PulsePage() {
   // Fetch today's broadcast
   const today = new Date().toISOString().split("T")[0];
@@ -31,7 +51,19 @@ export default async function PulsePage() {
         <p className="text-xl md:text-2xl text-alchemical-gold font-light tracking-wide leading-relaxed">
           Navigational guidance for the collective nervous system.
         </p>
-        <div className="w-24 h-px bg-platinum mx-auto mt-12" />
+
+        {broadcast && broadcast.date && (
+          <div className="mt-10 flex flex-col items-center justify-center space-y-3">
+            <span className="text-[10px] uppercase font-mono tracking-widest text-[#9ca3af] border-b border-alchemical-gold/30 pb-1">
+              Forecast
+            </span>
+            <span className="text-lg font-light text-white/90 tracking-wide">
+              {formatPulseDate(broadcast.date)}
+            </span>
+          </div>
+        )}
+
+        <div className="w-24 h-px bg-platinum mx-auto mt-10" />
       </header>
 
       {/* Conditional Rendering: Data vs Fallback */}
