@@ -8,6 +8,7 @@ export const dynamic = 'force-dynamic'; // Enforce real-time server rendering
 export default async function PulsePage() {
   // Fetch today's broadcast
   const today = new Date().toISOString().split("T")[0];
+  const diagnosticUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'MISSING_ENV';
   
   const { data: broadcast, error } = await supabase
     .from("pulse_broadcasts")
@@ -44,9 +45,10 @@ export default async function PulsePage() {
             The Oracle is recalibrating. Next broadcast imminent.
           </p>
           {error && (
-            <p className="border border-red-500/50 bg-red-500/10 text-red-400 p-4 mt-8 text-sm font-mono tracking-tight mx-8 text-left break-all">
-              SYSTEM ERROR: {error.message}
-            </p>
+            <div className="border border-red-500/50 bg-red-500/10 text-red-400 p-4 mt-8 text-sm font-mono tracking-tight mx-8 text-left break-all space-y-4">
+              <p>SYSTEM ERROR: {error.message}</p>
+              <p>DIAGNOSTIC URL: "{diagnosticUrl}"</p>
+            </div>
           )}
         </section>
       ) : (
