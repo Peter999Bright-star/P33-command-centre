@@ -42,12 +42,13 @@ export type ClinicalLogRecord = {
 };
 
 export type PulseBroadcastRecord = {
-  date: string; // DATE (YYYY-MM-DD)
-  weather_summary: string | null;
-  somatic_impact: string | null;
-  sovereign_command: string | null;
-  cta_link: string | null;
-  global_shadow_windows: Record<string, any> | null; // JSONB
+  id: number;
+  date: string; // DATE
+  weather_summary: string;
+  somatic_impact: string;
+  sovereign_command: string;
+  cta_link: string;
+  global_shadow_windows: Record<string, { Rahu: string; Yama: string }>; // JSONB
 };
 
 export type SubscriberRecord = {

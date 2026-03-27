@@ -72,13 +72,27 @@ export default async function PulsePage() {
               <h3 className="text-2xl text-alchemical-gold font-medium text-center mb-8 uppercase tracking-widest">
                 Temporal Weather
               </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {cities.map((city) => {
-                  const window = broadcast.global_shadow_windows[city] || "Data Syncing...";
+                  const window = broadcast.global_shadow_windows[city];
                   return (
                     <div key={city} className="flex flex-col border border-platinum/20 p-4 bg-void-public text-center">
-                      <span className="text-xs uppercase font-mono tracking-widest text-muted mb-2">{city}</span>
-                      <span className="text-sm font-medium text-red-400">{window}</span>
+                      <span className="text-xs uppercase font-mono tracking-widest text-[#9ca3af] mb-4 border-b border-platinum/20 pb-2">{city}</span>
+                      {window ? (
+                        <div className="flex justify-between items-center text-xs">
+                          <div className="flex flex-col">
+                            <span className="text-alchemical-gold font-bold mb-1">RAHU</span>
+                            <span className="text-[#f3f4f6]">{window.Rahu}</span>
+                          </div>
+                          <div className="w-px h-8 bg-platinum/30 mx-2"></div>
+                          <div className="flex flex-col">
+                            <span className="text-red-400 font-bold mb-1">YAMA</span>
+                            <span className="text-[#f3f4f6]">{window.Yama}</span>
+                          </div>
+                        </div>
+                      ) : (
+                        <span className="text-sm font-medium text-red-400 mt-2">Data Syncing...</span>
+                      )}
                     </div>
                   );
                 })}
