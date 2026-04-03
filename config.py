@@ -1,0 +1,1 @@
+RESEND_API_KEY = "re_Q1PcfYLj_3fUK1Fh1z41V6MhYtWocyxSr"
