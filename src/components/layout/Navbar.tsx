@@ -9,7 +9,7 @@ export default function Navbar() {
                 <div className="flex items-center gap-4">
                     <div className="relative w-12 h-12 rounded-full overflow-hidden border border-platinum/50 flex-shrink-0">
                         <Image
-                            src="/logo.jpg"
+                            src="/logo-circle.png"
                             alt="Protocol 33 Logo"
                             fill
                             className="object-cover"
@@ -27,7 +27,7 @@ export default function Navbar() {
                     <Link href="/destiny-xray" className="text-primary hover:text-alchemical-gold transition-colors duration-300">
                         Destiny X-Ray
                     </Link>
-                    <Link href="/pulse" className="text-primary hover:text-alchemical-gold transition-colors duration-300">
+                    <Link href="/join" className="text-primary hover:text-alchemical-gold transition-colors duration-300">
                         Compass Pulse
                     </Link>
                     <Link href="/awakening" className="text-primary hover:text-alchemical-gold transition-colors duration-300">

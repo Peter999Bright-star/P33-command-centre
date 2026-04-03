@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="flex flex-col w-full">
       {/* The Hero Section */}
-      <section className="relative min-h-[90vh] flex flex-col items-center justify-center text-center px-6">
+      <section className="relative min-h-[90vh] bg-void-deep flex flex-col items-center justify-center text-center px-6">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white mb-6 opacity-0 animate-[var(--animate-slow-fade)]">
           Drop Anchor in the<br className="md:hidden" />
           <span className="text-alchemical-gold"> Windless Place.</span>
@@ -132,9 +132,11 @@ export default function Home() {
                 </div>
               </div>
 
-              <button className="mt-12 px-8 py-4 border border-platinum text-white font-bold tracking-widest uppercase hover:bg-white hover:text-void-deep transition-colors duration-300 w-full">
-                INITIATE TACTICAL RELIEF
-              </button>
+              <Link href="/contact" className="w-full mt-12 block">
+                <button className="px-8 py-4 border border-platinum text-white font-bold tracking-widest uppercase hover:bg-white hover:text-void-deep transition-colors duration-300 w-full">
+                  INITIATE TACTICAL RELIEF
+                </button>
+              </Link>
             </article>
 
             {/* Right Card: The OS Upgrade */}
@@ -164,9 +166,11 @@ export default function Home() {
                 </div>
               </div>
 
-              <button className="mt-12 px-8 py-4 bg-[#ddb940] text-void-deep font-bold tracking-widest uppercase hover:bg-white transition-colors duration-300 w-full">
-                ENTER THE HIGHWAY
-              </button>
+              <Link href="/contact" className="w-full mt-12 block">
+                <button className="px-8 py-4 bg-[#ddb940] text-void-deep font-bold tracking-widest uppercase hover:bg-white transition-colors duration-300 w-full">
+                  ENTER THE HIGHWAY
+                </button>
+              </Link>
             </article>
           </div>
         </div>
