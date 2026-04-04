@@ -27,7 +27,7 @@ export default function Navbar() {
                     <Link href="/destiny-xray" className="text-primary hover:text-alchemical-gold transition-colors duration-300">
                         Destiny X-Ray
                     </Link>
-                    <Link href="/join" className="text-primary hover:text-alchemical-gold transition-colors duration-300">
+                    <Link href="/pulse" className="text-primary hover:text-alchemical-gold transition-colors duration-300">
                         Compass Pulse
                     </Link>
                     <Link href="/awakening" className="text-primary hover:text-alchemical-gold transition-colors duration-300">
