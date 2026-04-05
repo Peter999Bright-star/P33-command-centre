@@ -1,4 +1,4 @@
-﻿import React from "react";
+import React from "react";
 import { supabase } from "../../lib/supabase";
 import SubscribeForm from "./SubscribeForm";
 import Link from "next/link";
@@ -141,12 +141,12 @@ export default async function PulsePage() {
                         <div className="flex justify-between items-center text-xs">
                           <div className="flex flex-col">
                             <span className="text-alchemical-gold font-bold mb-1">RAHU</span>
-                            <span className="text-[#f3f4f6]">{window.Rahu}</span>
+                            <span className="text-[#f3f4f6]">{window.Rahu || window.rahu_kaal}</span>
                           </div>
                           <div className="w-px h-8 bg-platinum/30 mx-2"></div>
                           <div className="flex flex-col">
                             <span className="text-red-400 font-bold mb-1">YAMA</span>
-                            <span className="text-[#f3f4f6]">{window.Yama}</span>
+                            <span className="text-[#f3f4f6]">{window.Yama || window.yamaganda}</span>
                           </div>
                         </div>
                       ) : (

@@ -48,7 +48,7 @@ export type PulseBroadcastRecord = {
   somatic_impact: string;
   sovereign_command: string;
   cta_link: string;
-  global_shadow_windows: Record<string, { Rahu: string; Yama: string }>; // JSONB
+  global_shadow_windows: Record<string, { Rahu?: string; Yama?: string; rahu_kaal?: string; yamaganda?: string; tz?: string; }>; // JSONB
 };
 
 export type SubscriberRecord = {
