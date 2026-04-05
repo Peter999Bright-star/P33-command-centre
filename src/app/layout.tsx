@@ -10,6 +10,10 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Protocol 33 Command Center",
   description: "The Sovereign Foundation - Phase 1",
+  icons: {
+    icon: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
 };
 
 import Navbar from "@/components/layout/Navbar";

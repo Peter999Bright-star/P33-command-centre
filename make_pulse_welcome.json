@@ -1,0 +1,55 @@
+{
+    "name": "Pulse Broadcast Welcome Engine",
+    "flow": [
+        {
+            "id": 1,
+            "module": "gateway:CustomWebHook",
+            "version": 1,
+            "parameters": {
+                "hook": null
+            },
+            "mapper": {},
+            "metadata": {
+                "designer": {
+                    "x": -300,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "id": 2,
+            "module": "http:ActionMakeRequest",
+            "version": 3,
+            "parameters": {
+                "url": "https://api.resend.com/emails",
+                "method": "post",
+                "headers": [
+                    {
+                        "name": "Authorization",
+                        "value": "Bearer YOUR_NEW_RESEND_API_KEY"
+                    },
+                    {
+                        "name": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "responseType": "text",
+                "bodyType": "raw",
+                "timeout": null,
+                "useMtls": false
+            },
+            "mapper": {
+                "body": "{\n  \"from\": \"Protocol 33 <pulse@mailer.p33eft.com>\",\n  \"to\": [\"{{1.record.email}}\"],\n  \"subject\": \"The Pulse: Transmission Link Established\",\n  \"html\": \"<p>Protocol 33 // The Pulse<br>Initializing Link to {{1.record.name}}...</p><p>The connection is stable.</p><p>You have successfully been added to the master broadcast list. Every morning at dawn, you will receive The Pulse: a direct, unvarnished transmission decoding the energetic weather you are currently moving through.</p><p>We track the daily Nakshatra (moon transit), map the global Shadow Windows (Rahu and Yama Kaal times where you should pull back from friction), and issue a somatic command to direct your nervous system appropriately.</p><p><strong>To Ensure Delivery:</strong><br>Algorithms are sensitive to deep truth. To guarantee The Pulse arrives in your primary inbox, please reply to this email with a simple \\\"Secured\\\", and mathematically ensure pulse@mailer.p33eft.com is added to your VIP contacts list.</p><p>Your first forecast arrives tomorrow.</p><p>Navigate well.<br>Protocol 33</p>\"\n}"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        }
+    ],
+    "metadata": {
+        "version": 1
+    }
+}
